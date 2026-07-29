@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="280" viewBox="0 0 1000 280" role="img" aria-label="Butacas libres — cuántos asientos quedan en cada función de cine">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="55%" stop-color="#12182100"/>
+      <stop offset="100%" stop-color="#1b1033"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff5c39"/>
+      <stop offset="100%" stop-color="#ff9d6e"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e6edf3" stop-opacity=".9"/>
+      <stop offset="100%" stop-color="#8b949e" stop-opacity=".15"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="280" fill="url(#bg)"/>
+  <rect width="1000" height="280" fill="#0d1117" opacity=".55"/>
+
+  <!-- haz de proyección -->
+  <path d="M690 40 L1000 -20 L1000 300 L690 240 Z" fill="url(#accent)" opacity=".06" filter="url(#glow)"/>
+
+  <!-- pantalla -->
+  <path d="M700 62 Q840 50 980 62 L980 70 Q840 58 700 70 Z" fill="url(#screen)"/>
+
+  <!-- butacas: 6 filas x 12, las ocupadas en rojo -->
+  <g>
+    <g fill="#21313f" stroke="#33556e" stroke-width="1">
+      <rect x="706" y="96" width="16" height="16" rx="4"/><rect x="728" y="96" width="16" height="16" rx="4"/><rect x="750" y="96" width="16" height="16" rx="4"/><rect x="772" y="96" width="16" height="16" rx="4"/><rect x="794" y="96" width="16" height="16" rx="4"/><rect x="816" y="96" width="16" height="16" rx="4"/><rect x="838" y="96" width="16" height="16" rx="4"/><rect x="860" y="96" width="16" height="16" rx="4"/><rect x="882" y="96" width="16" height="16" rx="4"/><rect x="904" y="96" width="16" height="16" rx="4"/><rect x="926" y="96" width="16" height="16" rx="4"/><rect x="948" y="96" width="16" height="16" rx="4"/>
+      <rect x="706" y="120" width="16" height="16" rx="4"/><rect x="728" y="120" width="16" height="16" rx="4"/><rect x="750" y="120" width="16" height="16" rx="4"/><rect x="772" y="120" width="16" height="16" rx="4"/><rect x="794" y="120" width="16" height="16" rx="4"/><rect x="816" y="120" width="16" height="16" rx="4"/><rect x="838" y="120" width="16" height="16" rx="4"/><rect x="860" y="120" width="16" height="16" rx="4"/><rect x="882" y="120" width="16" height="16" rx="4"/><rect x="904" y="120" width="16" height="16" rx="4"/><rect x="926" y="120" width="16" height="16" rx="4"/><rect x="948" y="120" width="16" height="16" rx="4"/>
+      <rect x="706" y="144" width="16" height="16" rx="4"/><rect x="728" y="144" width="16" height="16" rx="4"/><rect x="750" y="144" width="16" height="16" rx="4"/><rect x="772" y="144" width="16" height="16" rx="4"/><rect x="794" y="144" width="16" height="16" rx="4"/><rect x="816" y="144" width="16" height="16" rx="4"/><rect x="838" y="144" width="16" height="16" rx="4"/><rect x="860" y="144" width="16" height="16" rx="4"/><rect x="882" y="144" width="16" height="16" rx="4"/><rect x="904" y="144" width="16" height="16" rx="4"/><rect x="926" y="144" width="16" height="16" rx="4"/><rect x="948" y="144" width="16" height="16" rx="4"/>
+      <rect x="706" y="168" width="16" height="16" rx="4"/><rect x="728" y="168" width="16" height="16" rx="4"/><rect x="750" y="168" width="16" height="16" rx="4"/><rect x="772" y="168" width="16" height="16" rx="4"/><rect x="794" y="168" width="16" height="16" rx="4"/><rect x="816" y="168" width="16" height="16" rx="4"/><rect x="838" y="168" width="16" height="16" rx="4"/><rect x="860" y="168" width="16" height="16" rx="4"/><rect x="882" y="168" width="16" height="16" rx="4"/><rect x="904" y="168" width="16" height="16" rx="4"/><rect x="926" y="168" width="16" height="16" rx="4"/><rect x="948" y="168" width="16" height="16" rx="4"/>
+      <rect x="706" y="192" width="16" height="16" rx="4"/><rect x="728" y="192" width="16" height="16" rx="4"/><rect x="750" y="192" width="16" height="16" rx="4"/><rect x="772" y="192" width="16" height="16" rx="4"/><rect x="794" y="192" width="16" height="16" rx="4"/><rect x="816" y="192" width="16" height="16" rx="4"/><rect x="838" y="192" width="16" height="16" rx="4"/><rect x="860" y="192" width="16" height="16" rx="4"/><rect x="882" y="192" width="16" height="16" rx="4"/><rect x="904" y="192" width="16" height="16" rx="4"/><rect x="926" y="192" width="16" height="16" rx="4"/><rect x="948" y="192" width="16" height="16" rx="4"/>
+      <rect x="706" y="216" width="16" height="16" rx="4"/><rect x="728" y="216" width="16" height="16" rx="4"/><rect x="750" y="216" width="16" height="16" rx="4"/><rect x="772" y="216" width="16" height="16" rx="4"/><rect x="794" y="216" width="16" height="16" rx="4"/><rect x="816" y="216" width="16" height="16" rx="4"/><rect x="838" y="216" width="16" height="16" rx="4"/><rect x="860" y="216" width="16" height="16" rx="4"/><rect x="882" y="216" width="16" height="16" rx="4"/><rect x="904" y="216" width="16" height="16" rx="4"/><rect x="926" y="216" width="16" height="16" rx="4"/><rect x="948" y="216" width="16" height="16" rx="4"/>
+    </g>
+    <g fill="#4a2027" stroke="#6d2b33" stroke-width="1">
+      <rect x="772" y="144" width="16" height="16" rx="4"/><rect x="794" y="144" width="16" height="16" rx="4"/>
+      <rect x="750" y="168" width="16" height="16" rx="4"/><rect x="772" y="168" width="16" height="16" rx="4"/><rect x="816" y="168" width="16" height="16" rx="4"/>
+      <rect x="706" y="192" width="16" height="16" rx="4"/><rect x="750" y="192" width="16" height="16" rx="4"/><rect x="772" y="192" width="16" height="16" rx="4"/><rect x="794" y="192" width="16" height="16" rx="4"/><rect x="838" y="192" width="16" height="16" rx="4"/><rect x="860" y="192" width="16" height="16" rx="4"/>
+      <rect x="728" y="216" width="16" height="16" rx="4"/><rect x="750" y="216" width="16" height="16" rx="4"/><rect x="794" y="216" width="16" height="16" rx="4"/><rect x="816" y="216" width="16" height="16" rx="4"/><rect x="838" y="216" width="16" height="16" rx="4"/><rect x="882" y="216" width="16" height="16" rx="4"/><rect x="904" y="216" width="16" height="16" rx="4"/>
+    </g>
+  </g>
+
+  <!-- texto -->
+  <text x="64" y="118" font-family="Georgia, 'Times New Roman', serif" font-size="62" font-weight="700" fill="#e6edf3" letter-spacing="-1">Butacas</text>
+  <text x="64" y="184" font-family="Georgia, 'Times New Roman', serif" font-size="62" font-style="italic" font-weight="700" fill="url(#accent)" letter-spacing="-1">libres</text>
+  <rect x="66" y="206" width="46" height="3" rx="1.5" fill="url(#accent)"/>
+  <text x="64" y="238" font-family="'DejaVu Sans Mono', 'SF Mono', Menlo, Consolas, monospace" font-size="15" fill="#8b949e">cuántos asientos quedan en cada función</text>
+</svg>
