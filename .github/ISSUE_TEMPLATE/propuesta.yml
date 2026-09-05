@@ -1,0 +1,38 @@
+name: Proponer un cambio
+description: Una idea, una mejora o una cadena nueva.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problema
+    attributes:
+      label: Qué problema resuelve
+      description: Empieza por la necesidad, no por la solución.
+    validations:
+      required: true
+
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: Qué propones
+    validations:
+      required: true
+
+  - type: textarea
+    id: coste
+    attributes:
+      label: Coste en peticiones
+      description: |
+        Si toca una cadena: cuántas peticiones añade tu propuesta por acción del usuario.
+        El proyecto lee infraestructura ajena y ese número es el criterio principal.
+
+  - type: checkboxes
+    id: principios
+    attributes:
+      label: Encaja con el proyecto
+      options:
+        - label: No añade dependencias de npm.
+          required: true
+        - label: No sortea medidas anti-bot ni CAPTCHAs.
+          required: true
+        - label: No introduce peticiones automáticas en segundo plano.
+          required: true
