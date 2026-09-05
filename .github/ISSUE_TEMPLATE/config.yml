@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Cómo contribuir
+    url: https://github.com/enderdev01/butacas-libres/blob/develop/CONTRIBUTING.md
+    about: Flujo de ramas, estilo y qué se pide antes de mergear.
