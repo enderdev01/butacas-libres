@@ -1,0 +1,61 @@
+name: Reportar un error
+description: Algo no funciona como debería.
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: cadena
+    attributes:
+      label: Cadena afectada
+      options:
+        - Cineplanet
+        - Cinemark
+        - Cinépolis
+        - Varias o ninguna en concreto
+    validations:
+      required: true
+
+  - type: textarea
+    id: que-pasa
+    attributes:
+      label: Qué ocurre
+      description: Qué esperabas ver y qué viste en su lugar.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproducir
+    attributes:
+      label: Cómo reproducirlo
+      placeholder: |
+        1. Abro la app y elijo Cineplanet
+        2. Selecciono la película X
+        3. Abro la sede Y
+        4. La ocupación sale vacía
+    validations:
+      required: true
+
+  - type: textarea
+    id: salida
+    attributes:
+      label: Salida de consola
+      description: Lo que imprime `node server.js` mientras ocurre. Se formatea solo, no hace falta poner comillas.
+      render: shell
+
+  - type: input
+    id: node
+    attributes:
+      label: Versión de Node
+      description: Resultado de `node --version`.
+      placeholder: v20.11.0
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: comprobaciones
+    attributes:
+      label: Antes de enviar
+      options:
+        - label: La cadena responde si abro su web directamente en el navegador.
+          required: true
+        - label: He esperado el tiempo de enfriamiento y sigue pasando.
+          required: true

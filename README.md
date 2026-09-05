@@ -34,7 +34,7 @@ En Cineplanet, además, cada función abre un **plano de butacas real** con una 
 ## Arranque
 
 ```bash
-git clone https://github.com/anthoniriv/butacas-libres.git
+git clone https://github.com/enderdev01/butacas-libres.git
 cd butacas-libres
 node server.js
 ```
@@ -150,6 +150,10 @@ Los datos se leen en vivo de sus webs públicas y no se almacenan. Esta herramie
 
 Está pensada para correr **en local**, para tu propio uso. Si la despliegas como servicio público, todo el tráfico saldrá de una sola IP compartida entre tus usuarios, y las cadenas pueden bloquearla — como ya pasó durante el desarrollo.
 
+## Contribuir
+
+Las ramas `main` y `develop` están protegidas: todo entra por pull request contra `develop`. El flujo completo está en [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Licencia
 
-[MIT](LICENSE) · [@anthoniriv](https://github.com/anthoniriv)
+[MIT](LICENSE) · [@enderdev01](https://github.com/enderdev01)
