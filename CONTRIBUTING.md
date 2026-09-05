@@ -13,7 +13,7 @@ Ni `main` ni `develop` aceptan commits directos: ambas están protegidas y todo 
 ## Pasos
 
 ```bash
-git clone https://github.com/anthoniriv/butacas-libres.git
+git clone https://github.com/enderdev01/butacas-libres.git
 cd butacas-libres
 
 git switch develop
@@ -36,7 +36,7 @@ Si no tienes permiso de escritura, haz un fork y abre el PR desde tu fork hacia 
 - Las conversaciones del review resueltas.
 - Nada de force-push ni borrado sobre `main` y `develop`.
 
-El merge lo hace el mantenedor ([@anthoniriv](https://github.com/anthoniriv)). El paso de `develop` a `main` también.
+El merge lo hace el mantenedor ([@enderdev01](https://github.com/enderdev01)). El paso de `develop` a `main` también.
 
 ## Estilo
 

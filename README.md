@@ -34,7 +34,7 @@ En Cineplanet, además, cada función abre un **plano de butacas real** con una 
 ## Arranque
 
 ```bash
-git clone https://github.com/anthoniriv/butacas-libres.git
+git clone https://github.com/enderdev01/butacas-libres.git
 cd butacas-libres
 node server.js
 ```
@@ -156,4 +156,4 @@ Las ramas `main` y `develop` están protegidas: todo entra por pull request cont
 
 ## Licencia
 
-[MIT](LICENSE) · [@anthoniriv](https://github.com/anthoniriv)
+[MIT](LICENSE) · [@enderdev01](https://github.com/enderdev01)
