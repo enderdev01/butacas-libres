@@ -262,15 +262,25 @@ const SEAT_STATUS = { 0: 'free', 1: 'taken', 3: 'wheelchair', 5: 'blocked' };
 
 // Abrir y cerrar el mismo modal no debe repetir la petición.
 const detailCache = new Map(); // clave -> { at, data }
+const detailInflight = new Map();
 const DETAIL_TTL = Number(process.env.DETAIL_TTL_MS) || 30 * 1000;
 
 function cached(key, fn) {
   const hit = detailCache.get(key);
   if (hit && Date.now() - hit.at < DETAIL_TTL) return Promise.resolve(hit.data);
-  return fn().then((data) => {
-    detailCache.set(key, { at: Date.now(), data });
-    return data;
-  });
+
+  const running = detailInflight.get(key); // dos modales a la vez, una sola petición
+  if (running) return running;
+
+  const p = fn()
+    .then((data) => {
+      detailCache.set(key, { at: Date.now(), data });
+      return data;
+    })
+    .finally(() => detailInflight.delete(key));
+
+  detailInflight.set(key, p);
+  return p;
 }
 
 const seatplan = (cinemaId, sessionId, opts) =>
